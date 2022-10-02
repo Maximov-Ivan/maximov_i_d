@@ -7,7 +7,7 @@ int main() {
     int c = 0;
     int d = 0;
     std::cin >> y;
-    for (y++; y < 10000; ++y) {
+    for (y++; y < 10000; y += 1) {
         a = y / 1000;
         b = y / 100 % 10;
         c = y / 10 % 10;
