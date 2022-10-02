@@ -1,3 +1,4 @@
+// код
 #include <iostream>
 #include <cmath>
 
