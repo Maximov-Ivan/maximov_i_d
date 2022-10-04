@@ -57,6 +57,7 @@ int main() {
 #include <cmath>
 
 int main() {
+    std::ios_base::sync_with_stdio(false);
     int t = 0;
     int n = 0;
     int k = 0;
