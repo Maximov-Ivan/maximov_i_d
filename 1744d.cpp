@@ -27,17 +27,15 @@ int main() {
             pow_2 += 1;
         }
         int ans = 0;
-        int h = 0;
         bool fl = false;
         for (pow_2; pow_2 > 0; pow_2 -= 1) {
-            if (cnt_2 + pow_2 * (n / div_2 - h) >= n) {
+            if (cnt_2 + pow_2 * (n / div_2 - n / (2 * div_2)) >= n) {
                 ans += (n - cnt_2 - 1) / pow_2 + 1;
                 fl = true;
                 break;
             } else {
-                cnt_2 += pow_2 * (n / div_2 - h);
-                ans += n / div_2 - h;
-                h += n / div_2 - h;
+                cnt_2 += pow_2 * (n / div_2 - n / (2 * div_2));
+                ans += n / div_2 - n / (2 * div_2);
                 div_2 /= 2;
             }
         }
