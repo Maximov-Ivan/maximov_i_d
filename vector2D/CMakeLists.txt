@@ -1,0 +1,1 @@
+add_library(vector2D vector2D.h vector2D.cpp)
